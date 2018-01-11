@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forty Thrive</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Lato:300,400,700|Oswald|Quicksand:400,500" rel="stylesheet">
+</head>
+<body>
+<style>
+/*font-family: 'Lato', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;*/
+	body{
+		margin:0;
+	}
+	h1, h2, h3, p {
+		text-align: center;
+		margin: 0;
+		padding: 10px 0;
+		color: #383838;
+    	-webkit-font-smoothing: antialiased;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);	
+    	text-align: center;	
+	}
+	h1 {
+		font-size: 3em
+	}
+	p, li {
+		font-size: 22px;
+		margin-bottom: 30px;
+		font-family: 'Cormorant Garamond', serif;
+	}
+	ul{
+		padding:0;
+	}
+	li {
+		list-style-type: none;
+		text-align: left;
+	}
+	img {
+		width: 100%;
+	}
+	hr {
+	    display: block;
+	    height: 1px;
+	    border: 0;
+	    border-top: 2px solid #fff;
+	    margin: 1em 0;
+	    padding: 0; 
+	}
+	/*Colors ==========*/
+	.color-1 {
+		color: #F7F6F3;
+	}
+	.color-2 {
+		color: #EDE8E2;
+	}
+	/* Bright blue */
+	.color-3 {
+		color: #6DCCE1;
+	}
+	.color-3-bg {
+		background-color: #6DCCE1;
+	}
+	/* Medium Grey */
+	.color-4 {
+		color: #585857;
+	}
+	.color-5 {
+		color: #DED5CF;
+	}
+	.color-5-bg {
+		background-color: #DED5CF;
+	}
+	.color-1-bg {
+		background-color: #F7F6F3;
+	}
+	.color-2-bg {
+		background-color: #EDE8E2;
+	}
+	.primary-font {
+		font-family: 'Cormorant Garamond', serif;
+	}
+	.secondary-font {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+	.third-font {
+		font-family: 'Oswald', sans-serif
+	}
+	.theme-width {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}
+	.theme-width-alt {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}	
+	.btn {
+		/*display: block;*/
+		color: red;
+		/*width: 300px;*/
+		margin: 0 auto;
+		text-decoration: none;
+		padding:15px 0px;
+		background-color: #fff;
+		color: #4E595C;	
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.25em;
+		/*padding:15px 150px; */
+		width: 60%;
+		max-width: 100%;
+		display: inline-block;
+	}
+	.btn-home {
+		margin-top: 10px;
+	}
+	.pad-large {
+		padding:100px 0;
+	}
+	.pad-small {
+		padding: 50px 0;
+	}
+	.f-w-400 {
+		font-weight: 400;
+	}
+	.t-large {
+		font-size: 2.25em;
+	}
+	.count-text {
+		color: red;
+		font-family: 'Oswald', sans-serif;
+		padding: 0; 
+		margin: 0;
+		/*font-weight: 300;*/
+		font-size: 17px;
+		color: #E2E2E2;
+	}
+	.count-num-text {
+		display: inline-block;
+		margin-bottom: 0;
+		font-size: 3em;
+		color:#fff;
+	}
+	.get-tools-cont {
+		display: inline-block; 
+		width: 30%; 
+		padding: 20px 10px;
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box; 
+		margin-right: 2%; 
+		vertical-align: top;			
+	}
+	.get-tools-cont p {
+		margin-bottom: 0;
+		font-size: 1.25em;
+	}
+	.event-diff-cont {
+		display: inline-block;
+		background-color: rgba(222, 213, 207, .9); 
+		width: 23%; 
+		padding: 20px 10px;
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box; 
+		margin-right: 2%; 
+		height: 250px; 
+		vertical-align: top;
+		  line-height: 250px;
+		  text-align: center;
+	}
+	.event-diff-cont:last-child {
+		display: inline-block;
+		background-color: rgba(222, 213, 207, .9); 
+		width: 23%; 
+		padding: 20px 10px;
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box; 
+		margin-right: 0%; 
+		height: 250px; 
+		vertical-align: top;
+		  line-height: 250px;
+		  text-align: center;				
+	}
+	.event-diff-cont span {
+	  display: inline-block;
+	  vertical-align: middle;
+	  line-height: normal;
+	}		
+	#expected-cont {
+		background-color: #4E595C;
+	}
+	#expected-cont h2 {
+		color: #fff;
+		font-size: 2em;
+	}
+	#expected-cont ul {
+		text-align: center;
+	}
+	.expected-a {
+		display: inline-block;
+		margin-right: 20px;
+		color: #fff;
+	}
+	.ticket-text {
+		font-weight: 400;
+		color: #fff;
+		margin: 0;
+		font-family: 'Quicksand', sans-serif;
+		font-weight:500;
+	}
+	.home-sub-text {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+	.invest-img {
+		max-width: 500px;
+		margin-bottom: 20px;
+	}
+	#the-info-img-cont {
+		text-align: center; 
+		padding: 40px 0;
+	}
+	#the-info-img-cont img {
+		max-width: 500px;
+		margin: 0 auto;
+	}	
+	.info-cont {
+		padding: 20px 0;
+	}
+	#btm-banner-cont {
+		background-color: #4E595C;
+		border-top: 5px solid #6DCCE1; 
+		text-align: center;
+		padding: 50px 0;
+	}
+	#btm-banner-cont img {
+		max-width: 500px;
+	}
+
+	@media only screen and (max-width: 960px) {
+		.theme-width {
+			width: 90%;
+			margin: 0 auto;
+		}
+		.get-tools-cont {
+			display: block; 
+			width: 90%; 
+			-moz-box-sizing: border-box; 
+			box-sizing: border-box; 
+			text-align: center; 
+			margin: 0 auto;
+		}	
+		.get-tools-cont img {
+			width: 150px;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}	
+		.event-diff-cont {
+			display: block;
+			background-color: rgba(222, 213, 207, .9); 
+			width: 90%; 
+			/*padding: 20px 10px;*/
+			-moz-box-sizing: border-box; 
+			box-sizing: border-box; 
+			/*margin-right: 2%; */
+			margin: 0 auto;
+			/*height: 250px; */
+			vertical-align: top;
+			margin-bottom: 10px;	
+		}
+		.event-diff-cont:last-child {
+			display: block;
+			background-color: rgba(222, 213, 207, .9); 
+			width: 90%; 
+			/*padding: 20px 10px;*/
+			-moz-box-sizing: border-box; 
+			box-sizing: border-box; 
+			/*margin-right: 2%; */
+			margin: 0 auto;
+			/*height: 250px; */
+			vertical-align: top;
+			margin-bottom: 10px;		
+		}			
+		.theme-width {
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;		
+		}
+		.theme-width-alt {
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;		
+		}
+		#the-info-img-cont img {
+			max-width: 80%;
+			margin: 0 auto;
+		}	
+		.info-cont {
+			padding: 20px;
+		}
+		#btm-banner-cont img {
+			width: 90%;
+			margin:0 auto;
+		}		
+	}	
+</style>
+
+
+
+
+	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/RQPUOeC4RZqwNf5ZD0Rz_Thrive_women_table.jpg');">
+		<div class="theme-width pad-small">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/vKT9sf3mQgOPfjy4jOiN_Workshop.png">
+			<hr>
+			<h3 class="third-font home-sub-text">QUICK NOTE: OUR EVENTS FILL UP FAST! GET YOUR SEAT BEFORE SPACES ARE GONE</h3>
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/JWvsoRMSMiHRAkyvhPpY_Forty_thrive_ticket.jpg">
+			<a href="#" class="btn btn-home">REGISTER NOW</a>
+			<p class="secondary-font ticket-text">Only 50 Tickets Left!</p>
+		</div>
+	</div>
+
+	<div class="color-3-bg">
+		<div style="padding: 20px 0;">
+			<ul style="padding: 0;margin: 0; text-align: center;">
+				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
+				<li class="third-font count-num-text dayz"></li>
+				<li class="third-font count-num-text hourz"></li>
+				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text expired"></li>
+			</ul>
+		</div>
+	</div>
+   
+	<div class="color-1-bg">
+		<div class="theme-width-alt">
+			<div class="pad-small">
+				<p class="t-large" style="margin: 0; font-size: 3em;">What if you could learn from some of the best experts in personal development, while you connect and collaborate with like-minded women and get a jump start on crushing your goals?</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="theme-width pad-small">
+		<p class="secondary-font">Our Thrive By Design Workshop Was Created to Help You <span style="text-decoration:underline;"><em>Get the Tools and Connections to Take Life to the Next Level.</em></span> Our goal is to provide you with a <strong>step-by-step action plan</strong> and <strong>blueprint to set and crush your goals.</strong> At our workshop, we share our secrets to personal and professional success all in one place.</p>
+
+			<div class="get-tools-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/nH88wJbhRoS7LVVxC240_community_w_circle.png">
+				<h2 class="secondary-font f-w-400">NETWORK</h2>
+				<p class="secondary-font">Connect with Other Goal-Driven Women</p>
+			</div>
+			<div class="get-tools-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/hhGaOhB3QI2hFYDY8sfB_tools_w_circle.png">
+				<h2 class="secondary-font f-w-400">TOOLS</h2>
+				<p class="secondary-font">Learn the Latest Tips and Tools to Personal Success from Experts and Thought Leaders</p>				
+			</div>
+			<div class="get-tools-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/nH88wJbhRoS7LVVxC240_community_w_circle.png">
+				<h2 class="secondary-font f-w-400">COMMUNITY</h2>
+				<p class="secondary-font">Join a Community that Supports & Recognizes You</p>					
+			</div>
+	</div>
+	
+	<div class="pad-small color-5-bg">
+		<div class="theme-width">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/UHGJV15oTzSTJUpcwYRM_OUTCOME_title.png">
+			<p>After one day connecting and collaborating, you’ll have the know-how and inspiration to kick life up a notch and move even closer to your dream goal.</p>
+			<div style="padding:20px 0;">
+				<a href="#" class="btn">REGISTER NOW</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="theme-width pad-large">
+		<h1 class="primary-font">What You Can Expect To Learn:</h1>
+		<ul>
+			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Get Unstuck:</strong> How to identify those areas of your life that need to be shaken up.</li>
+			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Pivot:</strong> How to create new opportunities while keeping your day job (for now).</li>
+			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>What’s Next?</strong> How to make the leap from what you’re doing to where you want to be.</li>
+			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>How to Thrive:</strong> Find clarity, purpose and partnerships to crush any goal you set.</li>
+		</ul>
+		<h1 class="primary-font">Plus… much more!</h1>
+	</div>
+
+	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/b40Ov0iS16H4nuty7WZM_WOMEN_AGAINST_WALL.jpg');">
+		<div class="theme-width-alt pad-large">	
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/NtzOx0QPQIuhsz2STA7X_The_Difference.png">
+			<div class="event-diff-cont">
+				<span><p>We provide a supportive, nurturing ENVIRONMENT for you to grow and learn with other like-minded women</p></span>
+			</div>
+			<div class="event-diff-cont">
+				<span><p>We give you POWERFUL TOOLS you can implement immediately to improve your life</p></span>
+			</div>
+			<div class="event-diff-cont">
+				<span><p>We focus on content that will provide real value and will bring you real RESULTS</p></span>
+			</div>
+			<div class="event-diff-cont">
+				<span><p>We value your time and skip the fluff -- all of our speakers provide information and STRATEGIES you can’t get anywhere else</p></span>
+			</div>				
+		</div>
+	</div>
+
+	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/BXNwzN1iRSapkH4ugY0Y_sfcsd.jpg');">
+		<div class="theme-width pad-large">
+			<h1 class="primary-font color-4">WHAT WE DON'T TEACH!</h1>
+			<p class="secondary-font color-4">We’re not about having you show up to learn everything you could find through an internet search. We’re all about original content that can help you in your life TODAY, shared by women who’ve found incredible success and can help you get there too. Our event is a unique opportunity to identify those areas and get simple strategies to take the next step into the life you know you’re capable of.</p>
+		</div>
+	</div>
+
+	<div class="color-2-bg">
+		<div class="theme-width pad-large">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/oe1NIPxRSuGo1XZBlBGc_Invest_in_yourself.png" class="invest-img">
+			<p>If you’re like us, you’re hesitant to take time away from your life without knowing if it will be worth it. Nobody’s got time for that!</p>
+
+			<p>Make the decision to join us. Show up with an open mind and heart, be ready to make lasting connections, learn tools that will rock your world, and invest in yourself and your future. You’ll position yourself to see results and get a huge return on investment. You’ll wonder what took you so long to get started!</p>
+		</div>
+	</div>
+
+	<div id="expected-cont" class="pad-small">
+		<h2 class="primary-font">Expected Attendees:</h2>
+		<hr style="width: 100px; margin:0 auto;">
+		<ul>
+			<li class="expected-a"><em>Entrepreneurs</em></li>
+			<li class="expected-a"><em>Influencers</em></li>
+			<li class="expected-a"><em>Experts</em></li>
+			<li class="expected-a"><em>Moms (at home and working)</em></li>
+		</ul>
+		
+	</div>
+
+	<div class="theme-width pad-small">
+		<div id="the-info-img-cont" class="color-3-bg">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/gF99Eq10RXOYIxRxce15_rfsg.png">
+		</div>
+		<div class="color-2-bg info-cont">
+			<p class="t-large">Saturday, March 10, 2018 <br>9am -5pm</p>
+			<hr style="width: 100px; margin:0 auto; border-top: 2px solid #fff;">
+			<p class="t-large">Embassy Suites <br> 28508 Westinghouse Pl <br> Valencia, CA  91355</p>
+		</div>
+	</div>
+
+	<div style="background-color: #4E595C;">
+		<div style="padding: 20px 0;">
+			<ul style="padding: 0;margin: 0; text-align: center;">
+				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
+				<li class="third-font count-num-text dayz"></li>
+				<li class="third-font count-num-text hourz"></li>
+				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text expired"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="theme-width pad-small">
+		<div style="background-color: #C6C6C6;">
+			<h2 class="secondary-font t-large">VIP ACCESS</h2>
+		</div>
+		<div class="color-2-bg">
+			<h1 class="primary-font" style="padding: 20px 0;">$297</h1>
+			<a href="#" class="btn">REGISTER NOW</a>
+			<p>ENTER PROMO CODE: _____</p>
+		</div>
+	</div>
+
+	<div id="btm-banner-cont">
+		<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/CQ5GJCtQW6BBkNM5cHtl_hgfd.png">
+	</div>
+
+
+</body>
+
+
+
+<script>
+	// document.getElementsByClassName("tio")[0].innerHTML = "sss";
+	// document.getElementsByClassName("tio")[1].innerHTML = "skdkjd";
+
+    CountDownTimer('03/10/2018');
+    // CountDownTimer('02/19/2019', 'countdown');
+    // CountDownTimer('02/20/2012 10:10 AM', 'newcountdown');
+
+    function CountDownTimer(dt)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementsByClassName("expired")[0].innerHTML = 'Our event has passed but watch out for the next one!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            console.log(seconds)
+
+            // document.getElementById('dayz').innerHTML = days + ": <p class='count-text'>DAYS</p>";
+
+            if(days < 10) {
+            	document.getElementsByClassName('dayz')[0].innerHTML = "0" + days + ": <p class='count-text'>DAYS</p>";
+            	document.getElementsByClassName('dayz')[1].innerHTML = "0" + days + ": <p class='count-text'>DAYS</p>";        
+            }
+            else {
+            	document.getElementsByClassName('dayz')[0].innerHTML = days + ": <p class='count-text'>DAYS</p>";
+            	document.getElementsByClassName('dayz')[1].innerHTML = days + ": <p class='count-text'>DAYS</p>";
+            } 
+            if(hours < 10) {
+            	document.getElementsByClassName('hourz')[0].innerHTML = "0" + hours + ": <p class='count-text'>HOURS</p>";
+            	document.getElementsByClassName('hourz')[1].innerHTML = "0" + hours + ": <p class='count-text'>HOURS</p>";      
+            }
+            else {
+            	document.getElementsByClassName('hourz')[0].innerHTML = hours + ": <p class='count-text'>HOURS</p>";
+            	document.getElementsByClassName('hourz')[1].innerHTML = hours + ": <p class='count-text'>HOURS</p>";
+            }            
+            if(minutes < 10) {
+            	document.getElementsByClassName('minutez')[0].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
+            }
+            else {
+            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            }
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+
+</script>	
+
+</html>
