@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changemaker</title>
+</head>
+<body>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forty Thrive</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Lato:300,400,600,700|Oswald:300,400,600|Quicksand:300,400,500" rel="stylesheet">
+</head>
+<body>
+<style>
+/*font-family: 'Lato', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;*/
+	body{
+		margin:0;
+	}
+	h1, h2, h3, p {
+		margin: 0;
+		padding: 10px 0;
+		color: #383838;
+    	-webkit-font-smoothing: antialiased;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);	
+	}
+	h1 {
+		font-size: 3em;
+		font-family: 'Lato', sans-serif;
+	}
+	h2 {
+		font-size: 2em;
+		font-family: 'Lato', sans-serif;
+	}
+	p, li {
+		font-size: 18px;
+/*		margin-bottom: 30px;*/
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+	ul{
+		padding:0;
+	}
+	li {
+		list-style-type: none;
+		text-align: left;
+	}
+	img {
+		width: 100%;
+	}
+	hr {
+	    display: block;
+	    height: 1px;
+	    border: 0;
+	    border-top: 2px solid #555;
+	    margin: 1em 0;
+	    padding: 0; 
+	}
+	/*Colors ==========*/
+
+	.primary-font {
+		font-family: 'Cormorant Garamond', serif;
+	}
+	.secondary-font {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+	.third-font {
+		font-family: 'Oswald', sans-serif
+	}
+	.fourth-font {
+		font-family: 'Quicksand', sans-serif;
+	}
+	.theme-width {
+		width: 60%;
+		margin: 0 auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}
+	.theme-width-alt {
+		width: 70%;
+		margin: 0 auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+	}	
+	.btn {
+		/*display: block;*/
+		color: red;
+		/*width: 300px;*/
+		margin: 0 auto;
+		text-decoration: none;
+		padding:15px 0px;
+		background-color: #fff;
+		color: #4E595C;	
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.25em;
+		/*padding:15px 150px; */
+		width: 60%;
+		max-width: 100%;
+		display: inline-block;
+	}
+	.btn-home {
+		margin: 20px 0;
+	}
+	.pad-large {
+		padding:100px 0;
+	}
+	.pad-small {
+		padding: 50px 0;
+	}
+	.f-w-400 {
+		font-weight: 400;
+	}
+	.t-large {
+		font-size: 2.25em;
+	}
+	.count-text {
+		color: red;
+		font-family: 'Oswald', sans-serif;
+		padding: 0; 
+		margin: 0;
+		/*font-weight: 300;*/
+		font-size: 17px;
+		color: #E2E2E2;
+	}
+	.count-num-text {
+		display: inline-block;
+		margin-bottom: 0;
+		font-size: 3em;
+		color:#fff;
+	}
+	.ticket-text {
+		font-weight: 400;
+		color: #fff;
+		margin: 0;
+		font-family: 'Quicksand', sans-serif;
+		font-weight:500;
+	}
+	.home-sub-text {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+	.invest-img {
+		max-width: 500px;
+		margin-bottom: 20px;
+	}
+	#the-info-img-cont {
+		text-align: center; 
+		padding: 40px 0;
+	}
+	#the-info-img-cont img {
+		max-width: 500px;
+		margin: 0 auto;
+	}	
+	.info-cont {
+		padding: 20px 0;
+	}
+	#btm-banner-cont {
+		background-color: #DED5CF;
+		border-top: 5px solid #4B6675; 
+		text-align: center;
+		padding: 50px 0;
+	}
+	#btm-banner-cont img {
+		max-width: 500px;
+	}
+	.check-li {
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.75rem;
+		color: #dee0d0;
+	}
+
+	.text-under {
+		text-decoration: underline;
+	}
+	.countdown-info-sec {
+		padding: 20px 0;
+		display: inline-block;
+	}
+	.countdown-info-sec-2 {
+		padding: 20px 20px;
+		display: inline-block;
+	}	
+	.countdown-info-sec-text {
+		text-align: left; 
+		display: inline-block; 
+		margin: 0;  
+		vertical-align: top;
+		color:#fff;
+	}
+	.countdown-text-img-1 {
+		width: 80px;
+		margin-right: 20px;
+	}
+	.countdown-text-img-2 {
+		width: 80px;
+		margin-right: 0px;
+	}	
+	.speaker-pad {
+		padding: 40px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;			
+	}
+	@media only screen and (max-width: 960px) {
+		.theme-width {
+			width: 90%;
+			margin: 0 auto;
+		}
+		
+		.theme-width {
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;		
+		}
+		.theme-width-alt {
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;		
+		}
+		#the-info-img-cont img {
+			max-width: 80%;
+			margin: 0 auto;
+		}	
+		.info-cont {
+			padding: 20px;
+		}
+		#btm-banner-cont img {
+			width: 90%;
+			margin:0 auto;
+		}	
+		.countdown-info-sec img {
+			display: block;
+			margin: 0 auto
+		}	
+		.countdown-text-img-1 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;
+		}
+		.countdown-text-img-2 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;			
+		}	
+		.countdown-info-sec p {
+			text-align: center;
+		}	
+	}	
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}	
+</style>
+
+
+
+
+	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/7vlPXpy6SWK3Q5RkmnVG_sus-bg.jpg'); background-size: cover;">
+		<div class="theme-width pad-small" style="text-align: center;">
+			<h1 class="secondary-font" style="font-weight:600;color: #fff;">LIFESTYLE HACKERS EVENT</h1>
+			<h2 class="secondary-font" style="font-weight:600;color: #fff;">BUSSINESS GROWTH SOLUTIONS FOR THE CONSCIOUS ENTREPRENEUR</h2>
+			<div style="text-align: center;border-top: 1px solid #fff;border-bottom: 1px solid #fff;">
+				<div class="countdown-info-sec">
+					<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/sghkU52NQB2BbuYpWLN2_174a05b1def8eed7b817809ece052cc1.png" class="countdown-text-img-1">
+					<p class="countdown-info-sec-text third-font" style="font-size: 18px;">Saturday, March 23-25, 2018 <br> @9 am PST</p>
+				</div>	
+
+				<div class="countdown-info-sec-2">
+					<ul style="padding: 0;margin: 0; text-align: center;">
+						<!-- <li id="dayz" class="third-font count-num-text"></li> -->
+						<li class="third-font count-num-text dayz"></li>
+						<li class="third-font count-num-text hourz"></li>
+						<li class="third-font count-num-text minutez"></li>
+						<li class="third-font count-num-text expired"></li>
+					</ul>
+				</div>
+				<div class="countdown-info-sec">
+					<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/Os31gC4NSFmPZXYuH6xj_987e4f0b8fccd7d040ac585bb8106da6.png" class="countdown-text-img-2">
+					<p class="countdown-info-sec-text third-font" style="font-size: 18px;">Holiday Inn - LAX Airport<br> 9901 S La Cienega Blvd</p>
+				</div>			
+			</div>
+			<h3 class="third-font home-sub-text" style="font-weight: 400;">QUICK NOTE: OUR EVENTS FILL UP FAST! GET YOUR SEAT BEFORE SPACES ARE GONE</h3>
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/SeKpnOitQOecKjYu4GPL_e233272219bec440b410c8cb9c290eeb.jpg">
+			<a href="https://susana-rinderle.mykajabi.com/offers/F9yRg7Es" class="btn btn-home">REGISTER NOW</a>
+			<p class="secondary-font " style="padding: 0; color: #fff;font-weight: 600;">Only 50 Tickets Left!</p>
+		</div>
+	</div>
+
+	<div style="background-color: #F7F6F3;">
+		<div class="theme-width pad-large" style="text-align: center;">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/u46s0lVlSFKevaV1MSEA_71c87cb499db842bb9b78a5aa01d94de.png" style="width: 50px;margin:0 auto;display: block;">
+			<h1>SPEAKERS</h1>
+			<p>JOIN US FOR AN AMAZING TIME TO GROW AND GAIN INSIGHT FROM THESE POWERFUL SPEAKERS</p>
+		</div>
+	</div>
+
+	<!-- Speaker event -->
+	<div>
+		<div style="background-color: #80B1BC">
+			<div style="display:inline-block;width:35%;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/jOtycFUQy6R5i3aYJwSb_abi-photo.jpg" style="display: block;">
+			</div
+			><div class="speaker-pad" style="display:inline-block;width:65%;vertical-align: top;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #fff;">ABI LEVINE, C.HT.</h1>
+				<p style="color: #fff;"><strong>Abi is a speaker, author, Transformational Strategist and CEO and founder of Emotional Intelligence Society.</strong></p>
+				<p style="color: #fff;">When she first started her journey as a healer, she spent thousands of dollars on her education, healers of all kinds (including traditional therapists), living on three different continents. She has spent thousands of hours reading books, attending seminars and watching videos to learn different healing techniques (including becoming certified in Hypnotherapy and Neuro Linguistic Programming). She took everything she learned and distilled it into easy-to-apply processes and techniques, so that she could translate her healing to those in need, in a fraction of the time (two hundredths to be exact).</p>
+				<p style="color: #fff;">She believes that everyone should be free from the burdens of negative emotional trauma (including anxiety and depression) to live their best life now! She commits all her time to making that a reality, and has won many awards because of it, including Best in Santa Clarita 2014, 2015, 2016 & 2017, and also Best in Los Angeles 2015, 2016 & 2017. </p>
+			</div>
+		</div>
+
+		<div style="background-color: #68BDD9;">
+			<div class="speaker-pad" style="display:inline-block;width:70%;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #fff;">DAN MENDILOW</h1>
+				<p style="color: #fff;"><strong>Dan Mendilow is a speaker, author, Evolved Empowerment Coach, and CEO of the Breakthrough Mastery Academy.</strong></p>
+				<p style="color: #fff;">After struggling through life with major depression for 28 years, he got sick of watching others enjoy life while his slipped by, and he committed himself to discovering a way to heal his depression and create the extraordinary life he knew he deserved.  He devoted his life to studying the most powerful transformational techniques such as Positive Psychology, Neuro Linguistic Programming, Hypnosis, and the Vedic Sciences.  His quest allowed him to replace his depression with lasting genuine happiness, create a thriving 6-figure business within 6 months, and lead a fulfilling, abundant life.  He now devotes himself to helping others do the same. </p>		
+			</div
+			><div style="display:inline-block;width:30%; vertical-align: top;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/8k1CTxhERQWziIj8Pt1b_dan-photo.jpg" style="display: block;">
+			</div>
+		</div>		
+
+		<div style="background-color: #EDE8E2;margin-bottom: -4px;">
+			<div style="display:inline-block;width:30%;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/XcX8adTGme5fedYJ3A6Q_adam-photo.jpg" style="display: block;">
+			</div
+			><div class="speaker-pad" style="display:inline-block;width:70%;vertical-align: top;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #55585F;">ADAM IMOB FLORES</h1>
+				<p style="color: #55585F;">Adam is a young revolutionary leader in business. For many years he struggled to get his message and business ideas out into the world. His frustration led him to become a radical student in leadership, social media, and Internet marketing. His ability to combine the best fundamental principles in each category, paved the way for Adam to build his business beyond a million dollars in sales. Although he’s had a lot of success, it wasn’t enough for Adam. His genuine passion and charisma to see people and organizations win in the marketplace has been his driving force to become an expert in his craft. He now spends his time consulting for individuals, businesses, and organizations across the country.</p>
+			</div>
+		</div>
+
+		<div style="background-color: #80B1BC;">
+			<div class="speaker-pad" style="display:inline-block;width:70%;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #fff;">TRACY HAZZARD</h1>
+				<p style="color: #fff;">Tracy Hazzard is an Inc. Columnist and the co-host of three top-ranked podcasts – Feed Your Brand; Product Launch Hazzards; and WTFFF?! – the 3D Print Start Point. With a constant stream of content and products from her authority platform, reaching over 100,000 listeners and viewers each month, Tracy influences and casts branded content, consumer products and innovation around the world.  In addition to writing for Inc., Tracy has been featured in Forbes, Thrive Global, Wired, Fortune Small Business, and CNN Money. The Harvard Business Review teaches a MBA program case study in 26 universities around the world on her handling of Intellectual Property as an Entrepreneur resulting in a viral PR campaign before Social Media even existed. Tracy’s brand knowledge and experience takes you from invisible to credible AND from not getting enough to getting more!</p>		
+			</div
+			><div style="display:inline-block;width:30%; vertical-align: top;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/BEunUJeESduUMoHLSufn_tracy-photo.jpg" style="display: block;">
+			</div>
+		</div>	
+
+		<div style="background-color: #99BFC7;margin-bottom: -4px;">
+			<div style="display:inline-block;width:30%;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/VdyChXnTWNtev1jwjdgW_loren-photo.jpg" style="display: block;">
+			</div
+			><div class="speaker-pad" style="display:inline-block;width:70%;vertical-align: top;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #fff;">LOREN MICHAELS HARRIS</h1>
+				<p style="color: #fff;">Loren Michaels-Harris strives to motivate, inspire, and uplift every person that crosses his path. He shows those that want to know that while life is full of challenges, it is our challenges that provide opportunity. Loren loves his Creator, books, music, and all things of beauty. He loves being creative, and says, “I love me”.  In addition to his upcoming album, as a former foster child, Loren is embarking on a speaking tour in 2018 to give hope to those who are desperate to break through the various “glass ceilings” of their lives.  As a Mentor,  Break Through Coach, Author,  and friend,  Loren believes that we are all a part of The Ripple Effect and that it is his duty to create a ripple with his story that will reach around the globe.  Say’s Loren, “My goal in life, is to expose as many people as possible to this systematic approach that has  worked 100%  in providing a template for me to follow which has provided  a life that before I only dreamed about.  Loren has been heard on Larry King Live and NPR Radio, featured in PEOPLE Magazine, and seen on ABC, NBC, CBS, CNN,  AND  FOX.</p>
+			</div>
+		</div>
+
+
+		<div style="background-color: #F7F6F3;">
+			<div class="speaker-pad" style="display:inline-block;width:70%;">
+				<h1 class="secondary-font" style="font-weight: 400;padding-bottom: 0; color: #55585F;">LIBBY CROW</h1>
+				<p style="color: #55585F;">Libby is 'The Human Sparkler' of the business world. Through her masterminds, coaching programs, personal mentorship, and retreats she bridges the gap between internet marketing and soulful service helping entrepreneurs grow their businesses online. At the end of the day she helps people do two things: 1. Make more money by magnetizing the right clients. 2. Have more ease through building systems. Libby is the founder of Behind the Dream, the movement giving entrepreneurs a look under the hood of what it takes to own a successful business.</p>		
+			</div
+			><div style="display:inline-block;width:30%; vertical-align: top;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/hm4GKYxZTP2jWaKHuW9r_libby-photo.jpg" style="display: block;">
+			</div>
+		</div>
+	</div>
+
+	<div style="background-color: #4B6675;">
+			<div class="theme-width pad-large" style="text-align: center;">
+				<h1 style="color: #fff;">WHAT OTHERS ARE SAYING</h1>
+				<hr>
+				<p style="color: #fff;">“I’ve been on a journey of self development for the last couple of years and Abi & Dan’s workshops have helped me more than I can possibly explain.  Everybody needs this.  Everybody needs to go."</p>
+				<p style="color: #fff;">JENNIFER R.</p>
+				<p style="color: #fff;">“Everybody NEEDS to go this workshop.  I’ve spent thousands of dollars on personal development, and I have NEVER been to a workshop this effective.  You need to go NOW, before they’re famous” </p>
+				<p style="color: #fff;">TAMI L.</p>
+				<a href="https://susana-rinderle.mykajabi.com/offers/F9yRg7Es" class="btn">REGISTER NOW</a>
+			</div>
+	</div>
+
+
+	<div class="theme-width pad-large" style="text-align: center;">
+		<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/r68XXRRPQWC6GTclCiuo_discover-photo.png">
+
+		<ul style="display: inline-block;">
+			<li class="third-font" style="font-size: 1.5rem;"><span class="check-li">&#10003; </span>Magnetically Attract Heaps of Amazing Clients to Your Business</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Clear Wealth and Abundance Blocks so Your Business Can Thrive</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Explode Your Business Using The Latest Online Marketing Strategies</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Make Sales Simple With Persuasive Yet Authentic Email Marketing</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Stand Out From the Competition Using the Most Effective Podcasting Strategies</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Book More Speaking Engagements Than You Know What To Do With</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span>Rewire Your Unconscious Mind To Naturally Drive You To Success</li>
+			<li class="third-font" style="font-size: 1.5rem;" ><span class="check-li">&#10003; </span><strong>How To Build Your Business While Staying Authentic To You</strong></li>			
+		</ul>
+	</div>
+
+
+	<div style="background-color: #EDE8E2;">
+		<div class="theme-width pad-large" style="text-align: center;">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/equ1ybRXSJKTVtwVnkDv_0e45ddf077989d2e1de51590651d844a.png" style="width: 100px;margin: 0 auto;">
+			<h1>WHAT MAKES OUR EVENT DIFFERENT?</h1>
+			<!-- Left side  -->
+			<div style="display:inline-block;width: 45%;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding: 40px;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/sgSpXo4T4WxH6LChf83Q_86df9e5111c5fe388c02070f5d638d0a.png" style="height: 100px; width:auto;">
+				<p>IMEDIATE IMPLIMENTATION</p>
+				<p>This is a hands-on event.  You won’t just learn about tools, you’ll use them right then and there to make concrete progress on your business goals</p>
+			</div>
+			<div style="display:inline-block;width: 45%;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding: 40px;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/dZW6pRwZSyuis1ea92hD_9bc2aeafa11b37d3a0251b774681647e.png" style="height: 100px; width:auto;">
+				<p>ATTRACT AMAZING CLIENTS</p>
+				<p>Our speakers attract amazing clients by being completely in integrity with who they are at a soul level… and they’re going to teach you how to do it too</p>
+			</div>	
+			<div style="display:inline-block;width: 45%;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding: 40px;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/OfwUthJmQZKBs17UDRJl_16c38ca9a7ddf8f1f2cca119c25795e7.png" style="height: 100px; width:auto;">
+				<p>CONSCIOUS NETWORKING</p>
+				<p>You’ll be able to network with like-minded, conscious professionals who could help you grow your business</p>
+			</div>
+			<div style="display:inline-block;width: 45%;-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding: 40px;">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/4teNiBtJTFSlxpQ1G39w_abccead832a20c2bce141f435a7c4463.png" style="height: 100px; width:auto;">
+				<p>MINDSET & MECHANICS</p>
+				<p>Success is 80% mindset, 20% mechanics.  Unlike other events that focus exclusively on mechanics, at our event you’re going to upgrade BOTH!</p>
+			</div>						
+		</div>
+		
+	</div>
+
+	<div class="pad-large" style="background-color: #80B1BC;text-align: center;">
+		<div class="theme-width">
+			<h2 style="color: #fff;">What We Don’t Teach!</h2>
+			<p style="color: #fff;">We don't teach basic information you can Google or find on YouTube. All of our strategies are ORIGINAL and are ONLY TAUGHT at our events!</p>
+
+			<p style="color: #fff;">That means ONLY those who attend will get ACCESS to this information.</p>
+
+			<p style="color: #fff;">We also don’t teach untested, “hype-y”, or get-rich-quick techniques that may or may not work for you.  All material has been tested extensively and has been used by thousands of people to achieve REAL, SIGNIFICANT, and LONG-LASTING results.</p>
+		</div>
+	</div>
+
+	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/lXt228wyT0SRvDYI5uT7_if-your-bg.jpg'); background-size: cover;">
+		<div class="theme-width pad-large" style="text-align: center;">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/P2bMEkb6SNygmAx8KTfA_if-your-photo.png">
+			<ul style="display: inline-block;">
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Blogger</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Mindful Pro</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Nutritional Expert</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Holistic Health Expert</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Acupuncturist</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Speaker</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Author</li>
+			</ul>
+			<ul style="display: inline-block;">
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Coach</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Therapist</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Hypnotherapist</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Heart-Centered Professional</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Energy Healer</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Essential Oils Expert</li>
+				<li class="third-font" style="color: #55585F;font-size: 1.25rem;"><span style="color:#23BED9;">&#x21d2; </span>Chiropractor</li>
+			</ul>			
+			<h2 style="color: #55585F;font-size: 1.25rem;">...or any professional who primarily focuses on helping people improve their quality of life.</h2>
+		</div>
+	</div>
+
+
+	<div style="background-color: #F7F6F3;">
+		<div class="theme-width pad-large" style="text-align: center;">
+		<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/GhmuzvNhReeZDnau2itz_81645847a21003fe255359dcff1b4e22.png" style="width: 100px; height: auto;margin: 0 auto;display: block;">
+			<h1 style="color: #55585F;">WHAT'S A BREAKTHROUGH IN YOUR BUSINESS WORTH?</h1>
+			<p>This event isn’t for everybody.  Some people are happy where their businesses are, and don’t feel like they need to spend any time on breaking through to the next level.  If that’s you, then congratulations!</p>
+
+			<p>Other people WANT a breakthrough in their business, but aren’t sure if it’s worth it to attend such an event.  If this sounds like you, ask yourself - how much would a breakthrough in your business be worth to you?</p>
+
+			<p>How long have you been trying to get a breakthrough in your business?  Would it be worth one more weekend to get it?</p>
+
+			<p>What’s the cost of participating in this potentially life-changing event?  Now compare that to the cost of not going, shutting down the possibility of growing your business exponentially, and allowing the current situation to continue or even get worse.  I think if you’ll compare the two, you’ll see that the cost of not participating is enormous, and the value of our event is undeniable.</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="theme-width pad-small" style="padding-bottom: 0;background-color: #4B6675;margin-top: 50px;">
+		<div id="the-info-img-cont">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/gF99Eq10RXOYIxRxce15_rfsg.png">
+		</div>
+		<div class=" info-cont" style="background-color: #EDE8E2;text-align: center;">
+			<p class="t-large primary-font">March 23-25 2018</p>
+			<hr style="width: 100px; margin:0 auto;">
+			<p class="t-large primary-font">Holiday Inn LAX Airport<br> 9901 S La Cienega Blvd, <br> Los Angeles, CA 90045</p>
+		</div>
+	</div>
+
+	<div class="theme-width" style="background-color: #4E595C;margin: 15px auto;">
+		<div style="padding: 20px 0;">
+			<ul style="padding: 0;margin: 0; text-align: center;">
+				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
+				<li class="third-font count-num-text dayz"></li>
+				<li class="third-font count-num-text hourz"></li>
+				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text expired"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="theme-width pad-small"  style="padding-top: 0;">
+		<div style="background-color: #C6C6C6;text-align: center;">
+			<h2 class="third-font t-large" style="color: #4E595C;">VIP ACCESS</h2>
+		</div>
+		<div style="background-color: #EDE8E2; text-align: center;padding-bottom: 20px;">
+			<h1 class="primary-font" style="padding: 20px 0;">$497</h1>
+			<a href="https://susana-rinderle.mykajabi.com/offers/F9yRg7Es" class="btn" style="background-color: #68BDD9;color: #fff; width: 80%;">REGISTER NOW</a>
+		</div>
+	</div>
+
+	<div id="btm-banner-cont" style="padding:100px 0;">
+		<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/iZ7E616dTx678x3yb0Ka_ea5014023781a5c033bc55ac1a0940ef_1_.png">
+	</div>
+
+
+</body>
+
+
+
+<script>
+	// document.getElementsByClassName("tio")[0].innerHTML = "sss";
+	// document.getElementsByClassName("tio")[1].innerHTML = "skdkjd";
+
+    CountDownTimer('03/23/2018');
+    // CountDownTimer('02/19/2019', 'countdown');
+    // CountDownTimer('02/20/2012 10:10 AM', 'newcountdown');
+
+    function CountDownTimer(dt)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementsByClassName("expired")[0].innerHTML = 'Our event has passed but watch out for the next one!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            console.log(seconds)
+
+            // document.getElementById('dayz').innerHTML = days + ": <p class='count-text'>DAYS</p>";
+
+            if(days < 10) {
+            	document.getElementsByClassName('dayz')[0].innerHTML = "0" + days + ": <p class='count-text'>DAYS</p>";
+            	document.getElementsByClassName('dayz')[1].innerHTML = "0" + days + ": <p class='count-text'>DAYS</p>";        
+            }
+            else {
+            	document.getElementsByClassName('dayz')[0].innerHTML = days + ": <p class='count-text'>DAYS</p>";
+            	document.getElementsByClassName('dayz')[1].innerHTML = days + ": <p class='count-text'>DAYS</p>";
+            } 
+            if(hours < 10) {
+            	document.getElementsByClassName('hourz')[0].innerHTML = "0" + hours + ": <p class='count-text'>HOURS</p>";
+            	document.getElementsByClassName('hourz')[1].innerHTML = "0" + hours + ": <p class='count-text'>HOURS</p>";      
+            }
+            else {
+            	document.getElementsByClassName('hourz')[0].innerHTML = hours + ": <p class='count-text'>HOURS</p>";
+            	document.getElementsByClassName('hourz')[1].innerHTML = hours + ": <p class='count-text'>HOURS</p>";
+            }            
+            if(minutes < 10) {
+            	document.getElementsByClassName('minutez')[0].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
+            }
+            else {
+            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            }
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+
+</script>	
+
+</html>
+
+
+</body>
+</html>
