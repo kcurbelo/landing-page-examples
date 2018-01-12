@@ -244,6 +244,29 @@ font-family: 'Quicksand', sans-serif;*/
 	#btm-banner-cont img {
 		max-width: 500px;
 	}
+	.countdown-info-sec {
+		padding: 20px 0;
+		display: inline-block;
+	}
+	.countdown-info-sec-2 {
+		padding: 20px 20px;
+		display: inline-block;
+	}	
+	.countdown-info-sec-text {
+		text-align: left; 
+		display: inline-block; 
+		margin: 0;  
+		vertical-align: top;
+		color:#fff;
+	}
+	.countdown-text-img-1 {
+		width: 80px;
+		margin-right: 20px;
+	}
+	.countdown-text-img-2 {
+		width: 80px;
+		margin-right: 0px;
+	}	
 
 	@media only screen and (max-width: 960px) {
 		.theme-width {
@@ -316,7 +339,26 @@ font-family: 'Quicksand', sans-serif;*/
 		#btm-banner-cont img {
 			width: 90%;
 			margin:0 auto;
-		}		
+		}	
+		.countdown-info-sec img {
+			display: block;
+			margin: 0 auto
+		}	
+		.countdown-text-img-1 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;
+		}
+		.countdown-text-img-2 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;			
+		}	
+		.countdown-info-sec p {
+			text-align: center;
+		}	
 	}	
 </style>
 
@@ -335,13 +377,11 @@ font-family: 'Quicksand', sans-serif;*/
 	</div>
 
 	<div class="color-3-bg" style="text-align: center;">
-		<div style="padding: 20px 0;display: inline-block;">
-			<div>
-				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/sghkU52NQB2BbuYpWLN2_174a05b1def8eed7b817809ece052cc1.png" style="width: 80px;margin-right: 20px;">
-				<p style="text-align: left; display: inline-block; margin: 0;  vertical-align: top;color:#fff;">Saturday, March 10, 2018 <br> @9 am - 12 pm PST</p>
-			</div>
+		<div class="countdown-info-sec">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/sghkU52NQB2BbuYpWLN2_174a05b1def8eed7b817809ece052cc1.png" class="countdown-text-img-1">
+			<p class="countdown-info-sec-text">Saturday, March 10, 2018 <br> @9 am - 12 pm PST</p>
 		</div>		
-		<div style="padding: 20px 20px;display: inline-block;">
+		<div class="countdown-info-sec-2">
 			<ul style="padding: 0;margin: 0; text-align: center;">
 				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
@@ -350,9 +390,9 @@ font-family: 'Quicksand', sans-serif;*/
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
-		<div style="padding: 20px 0;display: inline-block;">
-			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/Os31gC4NSFmPZXYuH6xj_987e4f0b8fccd7d040ac585bb8106da6.png" style="width: 80px;">
-			<p style="text-align: left; display: inline-block; margin: 0;  vertical-align: top;color:#fff;">Embassy Suites <br> 28508 Westinghouse Pl.</p>
+		<div class="countdown-info-sec">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/Os31gC4NSFmPZXYuH6xj_987e4f0b8fccd7d040ac585bb8106da6.png" class="countdown-text-img-2">
+			<p class="countdown-info-sec-text">Embassy Suites <br> 28508 Westinghouse Pl.</p>
 		</div>				
 	</div>
    

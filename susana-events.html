@@ -255,6 +255,57 @@ font-family: 'Quicksand', sans-serif;*/
 	.text-under {
 		text-decoration: underline;
 	}
+	.countdown-info-sec {
+		padding: 20px 0;
+		display: inline-block;
+	}
+	.countdown-info-sec-2 {
+		padding: 20px 20px;
+		display: inline-block;
+	}	
+	.countdown-info-sec-text {
+		text-align: left; 
+		display: inline-block; 
+		margin: 0;  
+		vertical-align: top;
+		color:#fff;
+	}
+	.countdown-text-img-1 {
+		width: 80px;
+		margin-right: 20px;
+	}
+	.countdown-text-img-2 {
+		width: 80px;
+		margin-right: 0px;
+	}
+	.diff-left {
+		display: inline-block; 
+		width: 46%;
+		vertical-align: top;
+		margin-right: 3%;
+	}	
+	.diff-right {
+		display: inline-block; 
+		width: 49%;
+		vertical-align: top;
+	}
+	.diff-left p, .diff-right p{
+		color: #fff; 
+		font-weight:400;
+		text-align: left;
+	}	
+	.past-cont-1 {
+		display: inline-block;
+		margin-right: 2%;"
+	}
+	.past-cont-2 {
+		display: inline-block;
+		margin-right: 0%;"
+	}	
+	.past-cont-1 li, .past-cont-2 li {
+		text-align: left;
+		margin-bottom: 20px;
+	}
 	@media only screen and (max-width: 960px) {
 		.theme-width {
 			width: 90%;
@@ -326,6 +377,53 @@ font-family: 'Quicksand', sans-serif;*/
 		#btm-banner-cont img {
 			width: 90%;
 			margin:0 auto;
+		}	
+		.countdown-info-sec img {
+			display: block;
+			margin: 0 auto
+		}	
+		.countdown-text-img-1 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;
+		}
+		.countdown-text-img-2 {
+			width: 80px;
+			margin-right: 0px;
+			display: block;
+			text-align: center;			
+		}	
+		.countdown-info-sec p {
+			text-align: center;
+		}	
+		.diff-left {
+			display: block; 
+			width: 100%;
+			/*vertical-align: top;*/
+			margin-right: 0%;
+		}	
+		.diff-right {
+			display: block; 
+			width: 100%;
+			vertical-align: top;
+			margin-right: 0%;
+		}	
+		.diff-left p, .diff-right p{
+			color: #fff; 
+			font-weight:400;
+			text-align: center;
+		}	
+		.past-cont-1 {
+			display: block;
+			margin-right: 0%;"
+		}
+		.past-cont-2 {
+			display: block;
+			margin-right: 0%;"
+		}					
+		.past-cont-1 li, .past-cont-2 li {
+			text-align: center;
 		}		
 	}	
 </style>
@@ -347,8 +445,13 @@ font-family: 'Quicksand', sans-serif;*/
 		</div>
 	</div>
 
-	<div class="color-3-bg">
-		<div style="padding: 20px 0;">
+	<div class="color-3-bg" style="text-align: center;">
+		<div class="countdown-info-sec">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/sghkU52NQB2BbuYpWLN2_174a05b1def8eed7b817809ece052cc1.png" class="countdown-text-img-1">
+			<p class="countdown-info-sec-text">Saturday, March 3, 2018 <br> @9 am - 12 pm PST</p>
+		</div>	
+
+		<div class="countdown-info-sec-2">
 			<ul style="padding: 0;margin: 0; text-align: center;">
 				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
@@ -357,6 +460,10 @@ font-family: 'Quicksand', sans-serif;*/
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
+		<div class="countdown-info-sec">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/Os31gC4NSFmPZXYuH6xj_987e4f0b8fccd7d040ac585bb8106da6.png" class="countdown-text-img-2">
+			<p class="countdown-info-sec-text">Embassy Suites <br> 28508 Westinghouse Pl.</p>
+		</div>			
 	</div>
    
 	<div class="color-1-bg">
@@ -416,39 +523,39 @@ font-family: 'Quicksand', sans-serif;*/
 			<h1 class="secondary-font" style="font-weight: 600; color: #fff;">What Makes Our Events Different?</h1>
 			<hr style="border-top: 2px solid #fff;">
 			<!-- Row 1 -->
-			<div style="display: inline-block; width: 46%;vertical-align: top;margin-right: 3%;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;"><strong>We are the best at (1) Walking the talk and (2) making deep work fun (even funny!)</strong></p>
+			<div class="diff-left">
+				<p  class="secondary-font"><strong>We are the best at (1) Walking the talk and (2) making deep work fun (even funny!)</strong></p>
 			</div>
-			<div style="display: inline-block; width: 49%;vertical-align: top;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We won’t pretend racism, sexism, homophobia, trauma, addiction or mental illness aren’t real or huge challenges</p>
+			<div class="diff-right">
+				<p  class="secondary-font">We won’t pretend racism, sexism, homophobia, trauma, addiction or mental illness aren’t real or huge challenges</p>
 			</div>
 			<!-- Row 2 -->
-			<div style="display: inline-block; width: 46%;vertical-align: top;margin-right: 3%;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We don’t make big promises we can’t keep.  We treasure integrity and accountability</p>
+			<div class="diff-left">
+				<p  class="secondary-font">We don’t make big promises we can’t keep.  We treasure integrity and accountability</p>
 			</div>
-			<div style="display: inline-block; width: 49%;vertical-align: top;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We won’t shame or pressure you into doing woo-woo stuff</p>
+			<div class="diff-right">
+				<p  class="secondary-font">We won’t shame or pressure you into doing woo-woo stuff</p>
 			</div>	
 			<!-- Row 3 -->
-			<div style="display: inline-block; width: 46%;vertical-align: top;margin-right: 3%;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We don’t promise that one workshop will change your life (We know you’re smarter than that!) but we can promise we’ll get you (re)started!</p>
+			<div class="diff-left">
+				<p  class="secondary-font">We don’t promise that one workshop will change your life (We know you’re smarter than that!) but we can promise we’ll get you (re)started!</p>
 			</div>
-			<div style="display: inline-block; width: 49%;vertical-align: top;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;text-decoration: line-through;">We don’t tell you what to do, we teach you how to figure that out for yourself now and always!</p>
+			<div class="diff-right">
+				<p  class="secondary-font" style="text-decoration: line-through;">We don’t tell you what to do, we teach you how to figure that out for yourself now and always!</p>
 			</div>	
 			<!-- Row 4 -->
-			<div style="display: inline-block; width: 46%;vertical-align: top;margin-right: 3%;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We aren’t afraid to admit we still have a lot to learn.  (But that doesn’t stop us from offering the wisdom we’ve already gained! )</p>
+			<div class="diff-left">
+				<p  class="secondary-font">We aren’t afraid to admit we still have a lot to learn.  (But that doesn’t stop us from offering the wisdom we’ve already gained! )</p>
 			</div>
-			<div style="display: inline-block; width: 49%;vertical-align: top;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We are silly and whimsical!  We love to laugh and inject fun into our work.  Deep work doesn’t have to be hard, painful or heavy!</p>
+			<div class="diff-right">
+				<p  class="secondary-font">We are silly and whimsical!  We love to laugh and inject fun into our work.  Deep work doesn’t have to be hard, painful or heavy!</p>
 			</div>	
 			<!-- Row 5 -->
-			<div style="display: inline-block; width: 46%;vertical-align: top;margin-right: 3%;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We won’t bash you over the head with the Law of Attraction, or tell you you created all the struggles and obstacles you face</p>
+			<div class="diff-left">
+				<p  class="secondary-font">We won’t bash you over the head with the Law of Attraction, or tell you you created all the struggles and obstacles you face</p>
 			</div>
-			<div style="display: inline-block; width: 49%;vertical-align: top;">
-				<p  class="secondary-font" style="color: #fff; font-weight:400;text-align: left;">We are sisters!</p>
+			<div class="diff-right">
+				<p  class="secondary-font">We are sisters!</p>
 			</div>											
 		</div>
 	</div>
@@ -474,29 +581,29 @@ font-family: 'Quicksand', sans-serif;*/
 	</div> -->
 
 	<div id="expected-cont" class="pad-large">
-		<div class="theme-width-alt">
+		<div class="theme-width-alt" style="text-align: center;">
 			<h1 class="primary-font">Past Changemaker Attendees:</h1>
 			<hr style="width: 40%; margin:0 auto;">
-			<ul style="display: inline-block;margin-right: 2%;">
-				<li style="margin-bottom: 20px;">Community Leaders</li>
-				<li style="margin-bottom: 20px;">Creatives & Artists</li>
-				<li style="margin-bottom: 20px;">Social Justice Warriors</li>
-				<li style="margin-bottom: 20px;">Educators & Teachers</li>
-				<li style="margin-bottom: 20px;">Org & Leadership Development</li>
+			<ul class="past-cont-1">
+				<li>Community Leaders</li>
+				<li>Creatives & Artists</li>
+				<li>Social Justice Warriors</li>
+				<li>Educators & Teachers</li>
+				<li>Org & Leadership Development</li>
 			</ul>
-			<ul style="display: inline-block;margin-right: 2%;">
-				<li style="margin-bottom: 20px;">Corporate Leaders</li>
-				<li style="margin-bottom: 20px;">Nonprofit Leaders</li>
-				<li style="margin-bottom: 20px;">Activists</li>
-				<li style="margin-bottom: 20px;">Spiritual Seekers</li>
-				<li style="margin-bottom: 20px;">Executive Coaches</li>
+			<ul class="past-cont-1">
+				<li>Corporate Leaders</li>
+				<li>Nonprofit Leaders</li>
+				<li>Activists</li>
+				<li>Spiritual Seekers</li>
+				<li>Executive Coaches</li>
 			</ul>			
-			<ul style="display: inline-block;margin-right: 0%;">
-				<li style="margin-bottom: 20px;">Mental Health Professionals</li>
-				<li style="margin-bottom: 20px;">Life Coaches</li>
-				<li style="margin-bottom: 20px;">Health & Wellness Practitioners</li>
-				<li style="margin-bottom: 20px;">Healers</li>
-				<li style="margin-bottom: 20px;">Environmental & Conservation Leaders</li>
+			<ul class="past-cont-2">
+				<li>Mental Health Professionals</li>
+				<li>Life Coaches</li>
+				<li>Health & Wellness Practitioners</li>
+				<li>Healers</li>
+				<li>Environmental & Conservation Leaders</li>
 			</ul>	
 		</div>			
 	</div>
@@ -548,7 +655,7 @@ font-family: 'Quicksand', sans-serif;*/
 	// document.getElementsByClassName("tio")[0].innerHTML = "sss";
 	// document.getElementsByClassName("tio")[1].innerHTML = "skdkjd";
 
-    CountDownTimer('03/10/2018');
+    CountDownTimer('03/03/2018');
     // CountDownTimer('02/19/2019', 'countdown');
     // CountDownTimer('02/20/2012 10:10 AM', 'newcountdown');
 
