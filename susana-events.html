@@ -299,6 +299,9 @@ font-family: 'Quicksand', sans-serif;*/
 		text-align: left;
 		margin-bottom: 20px;
 	}
+	.home-ticket {
+		width: 60%;
+	}
 	@media only screen and (max-width: 960px) {
 		.theme-width {
 			width: 90%;
@@ -417,7 +420,10 @@ font-family: 'Quicksand', sans-serif;*/
 		}					
 		.past-cont-1 li, .past-cont-2 li {
 			text-align: center;
-		}		
+		}	
+		.home-ticket {
+			width: 100%;
+		}			
 	}	
 </style>
 
@@ -432,7 +438,7 @@ font-family: 'Quicksand', sans-serif;*/
 			<h2 class="secondary-font" style="font-weight:600;color: #fff;">SPECIAL EDITION EVENT</h2>
 			<hr style="border-top: 2px solid #fff;">
 			<h3 class="third-font home-sub-text">QUICK NOTE: OUR EVENTS FILL UP FAST! GET YOUR SEAT BEFORE SPACES ARE GONE</h3>
-			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/SeKpnOitQOecKjYu4GPL_e233272219bec440b410c8cb9c290eeb.jpg">
+			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/SeKpnOitQOecKjYu4GPL_e233272219bec440b410c8cb9c290eeb.jpg" class="home-ticket">
 			<a href="https://susana-rinderle.mykajabi.com/offers/F9yRg7Es" class="btn btn-home">REGISTER NOW</a>
 			<p class="secondary-font " style="padding: 0; color: #fff;font-weight: 600;">Only 50 Tickets Left!</p>
 		</div>
@@ -446,10 +452,10 @@ font-family: 'Quicksand', sans-serif;*/
 
 		<div class="countdown-info-sec-2">
 			<ul style="padding: 0;margin: 0; text-align: center;">
-				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
 				<li class="third-font count-num-text hourz"></li>
 				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text secondz"></li>
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
@@ -504,21 +510,23 @@ font-family: 'Quicksand', sans-serif;*/
 				<p  class="secondary-font">We don’t promise that one workshop will change your life (We know you’re smarter than that!) but we can promise we’ll get you (re)started!</p>
 			</div>
 			<div class="diff-right">
-				<p  class="secondary-font" style="text-decoration: line-through;">We don’t tell you what to do, we teach you how to figure that out for yourself now and always!</p>
+<!-- 				<p  class="secondary-font">We don’t tell you what to do, we teach you how to figure that out for yourself now and always!</p> -->
+				<p  class="secondary-font">We are silly and whimsical!  We love to laugh and inject fun into our work.  Deep work doesn’t have to be hard, painful or heavy!</p>
 			</div>	
 			<!-- Row 4 -->
 			<div class="diff-left">
 				<p  class="secondary-font">We aren’t afraid to admit we still have a lot to learn.  (But that doesn’t stop us from offering the wisdom we’ve already gained! )</p>
 			</div>
 			<div class="diff-right">
-				<p  class="secondary-font">We are silly and whimsical!  We love to laugh and inject fun into our work.  Deep work doesn’t have to be hard, painful or heavy!</p>
+				<p  class="secondary-font">We are sisters!</p>
+<!-- 				<p  class="secondary-font">We are silly and whimsical!  We love to laugh and inject fun into our work.  Deep work doesn’t have to be hard, painful or heavy!</p> -->
 			</div>	
 			<!-- Row 5 -->
 			<div class="diff-left">
 				<p  class="secondary-font">We won’t bash you over the head with the Law of Attraction, or tell you you created all the struggles and obstacles you face</p>
 			</div>
 			<div class="diff-right">
-				<p  class="secondary-font">We are sisters!</p>
+				<!-- <p  class="secondary-font">We are sisters!</p> -->
 			</div>											
 		</div>
 	</div>
@@ -585,10 +593,10 @@ font-family: 'Quicksand', sans-serif;*/
 	<div class="theme-width" style="background-color: #4E595C;margin: 15px auto;">
 		<div style="padding: 20px 0;">
 			<ul style="padding: 0;margin: 0; text-align: center;">
-				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
 				<li class="third-font count-num-text hourz"></li>
 				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text secondz"></li>
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
@@ -618,7 +626,7 @@ font-family: 'Quicksand', sans-serif;*/
 	// document.getElementsByClassName("tio")[0].innerHTML = "sss";
 	// document.getElementsByClassName("tio")[1].innerHTML = "skdkjd";
 
-    CountDownTimer('03/03/2018');
+    CountDownTimer('03/10/2018');
     // CountDownTimer('02/19/2019', 'countdown');
     // CountDownTimer('02/20/2012 10:10 AM', 'newcountdown');
 
@@ -671,9 +679,17 @@ font-family: 'Quicksand', sans-serif;*/
             	document.getElementsByClassName('minutez')[1].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
             }
             else {
-            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
-            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
             }
+            if(seconds < 10) {
+            	document.getElementsByClassName('secondz')[0].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            }
+            else {
+            	document.getElementsByClassName('secondz')[0].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            }            
         }
 
         timer = setInterval(showRemaining, 1000);

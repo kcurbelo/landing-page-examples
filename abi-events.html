@@ -368,16 +368,16 @@ font-family: 'Quicksand', sans-serif;*/
 
 				<div class="countdown-info-sec-2">
 					<ul style="padding: 0;margin: 0; text-align: center;">
-						<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 						<li class="third-font count-num-text dayz"></li>
 						<li class="third-font count-num-text hourz"></li>
 						<li class="third-font count-num-text minutez"></li>
+						<li class="third-font count-num-text secondz"></li>
 						<li class="third-font count-num-text expired"></li>
 					</ul>
 				</div>
 				<div class="countdown-info-sec">
 					<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/Os31gC4NSFmPZXYuH6xj_987e4f0b8fccd7d040ac585bb8106da6.png" class="countdown-text-img-2">
-					<p class="countdown-info-sec-text third-font" style="font-size: 18px;">Holiday Inn - LAX Airport<br> 9901 S La Cienega Blvd</p>
+					<p class="countdown-info-sec-text third-font" style="font-size: 18px;">9801 AIRPORT BLVD<br> LOS ANGELES CA 90045</p>
 				</div>			
 			</div>
 			<h3 class="third-font home-sub-text" style="font-weight: 400;">QUICK NOTE: OUR EVENTS FILL UP FAST! GET YOUR SEAT BEFORE SPACES ARE GONE</h3>
@@ -419,7 +419,7 @@ font-family: 'Quicksand', sans-serif;*/
 				<p style="color: #fff;">After struggling through life with major depression for 28 years, he got sick of watching others enjoy life while his slipped by, and he committed himself to discovering a way to heal his depression and create the extraordinary life he knew he deserved.  He devoted his life to studying the most powerful transformational techniques such as Positive Psychology, Neuro Linguistic Programming, Hypnosis, and the Vedic Sciences.  His quest allowed him to replace his depression with lasting genuine happiness, create a thriving 6-figure business within 6 months, and lead a fulfilling, abundant life.  He now devotes himself to helping others do the same. </p>		
 			</div
 			><div class="speaker-30 desk-img">
-				<img class="speaker-pad" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/8k1CTxhERQWziIj8Pt1b_dan-photo.jpg" style="display: block; border-radius: 100%;">
+				<img class="speaker-pad" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/cFClMpKBQoWWhV4jdc1M_121117_Abi_Levine_Santa_Clarita_Headshots_SchlcikArt-1071SRGBlowres-3.jpg" style="display: block; border-radius: 100%;">
 			</div>
 		</div>		
 
@@ -591,17 +591,17 @@ font-family: 'Quicksand', sans-serif;*/
 		<div class=" info-cont" style="background-color: #EDE8E2;text-align: center;">
 			<p class="t-large primary-font">March 23-25 2018</p>
 			<hr style="width: 100px; margin:0 auto;">
-			<p class="t-large primary-font">Holiday Inn LAX Airport<br> 9901 S La Cienega Blvd, <br> Los Angeles, CA 90045</p>
+			<p class="t-large primary-font">9801 AIRPORT BLVD<br>LOS ANGELES CA 90045</p>
 		</div>
 	</div>
 
 	<div class="theme-width" style="background-color: #4E595C;margin: 15px auto;">
 		<div style="padding: 20px 0;">
 			<ul style="padding: 0;margin: 0; text-align: center;">
-				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
 				<li class="third-font count-num-text hourz"></li>
 				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text secondz"></li>
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
@@ -630,7 +630,7 @@ font-family: 'Quicksand', sans-serif;*/
 	// document.getElementsByClassName("tio")[0].innerHTML = "sss";
 	// document.getElementsByClassName("tio")[1].innerHTML = "skdkjd";
 
-    CountDownTimer('03/23/2018');
+    CountDownTimer('03/10/2018');
     // CountDownTimer('02/19/2019', 'countdown');
     // CountDownTimer('02/20/2012 10:10 AM', 'newcountdown');
 
@@ -683,9 +683,17 @@ font-family: 'Quicksand', sans-serif;*/
             	document.getElementsByClassName('minutez')[1].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
             }
             else {
-            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
-            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
             }
+            if(seconds < 10) {
+            	document.getElementsByClassName('secondz')[0].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            }
+            else {
+            	document.getElementsByClassName('secondz')[0].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            }            
         }
 
         timer = setInterval(showRemaining, 1000);

@@ -279,6 +279,12 @@ font-family: 'Quicksand', sans-serif;*/
 		margin: 0; 
 		font-size: 3em;
 	}
+	.banner-1 {
+		background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/bA3mJprRnGboH9ofaqIA_sdjkads.jpg');
+	}
+	.banner-2 {
+		background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/b40Ov0iS16H4nuty7WZM_WOMEN_AGAINST_WALL.jpg');background-size: cover;
+	}
 	@media only screen and (max-width: 960px) {
 		.theme-width {
 			width: 90%;
@@ -374,13 +380,22 @@ font-family: 'Quicksand', sans-serif;*/
 			margin: 0; 
 			font-size: 1.75em;
 		}			
+		.banner-1 {
+			background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/fiJI1AoMQtqqsyGvZ4sK_bgasd-2.jpg');
+			background-size: cover;
+		}	
+		.banner-2 {
+			background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/mJCrq0SRTJn9d57apJNa_djf-3.jpg');
+			background-size: cover;
+		}		
+
 	}	
 </style>
 
 
 
 
-	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/bA3mJprRnGboH9ofaqIA_sdjkads.jpg');">
+	<div class="banner-1">
 		<div class="theme-width pad-small">
 			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/vKT9sf3mQgOPfjy4jOiN_Workshop.png">
 			<hr>
@@ -394,7 +409,7 @@ font-family: 'Quicksand', sans-serif;*/
 	<div class="color-3-bg" style="text-align: center;">
 		<div class="countdown-info-sec">
 			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/400746/settings_images/sghkU52NQB2BbuYpWLN2_174a05b1def8eed7b817809ece052cc1.png" class="countdown-text-img-1">
-			<p class="countdown-info-sec-text">Saturday, March 10, 2018 <br> @9 am - 12 pm PST</p>
+			<p class="countdown-info-sec-text">Saturday, March 10, 2018 <br> 9am - 5pm PST</p>
 		</div>		
 		<div class="countdown-info-sec-2">
 			<ul style="padding: 0;margin: 0; text-align: center;">
@@ -402,6 +417,7 @@ font-family: 'Quicksand', sans-serif;*/
 				<li class="third-font count-num-text dayz"></li>
 				<li class="third-font count-num-text hourz"></li>
 				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text secondz"></li>
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
@@ -460,7 +476,7 @@ font-family: 'Quicksand', sans-serif;*/
 		<h1 class="primary-font">Plus… much more!</h1>
 	</div>
 
-	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/b40Ov0iS16H4nuty7WZM_WOMEN_AGAINST_WALL.jpg');background-size: cover;" >
+	<div class="banner-2">
 		<div class="theme-width-alt pad-large">	
 			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/NtzOx0QPQIuhsz2STA7X_The_Difference.png">
 			<div class="event-diff-cont">
@@ -511,7 +527,7 @@ font-family: 'Quicksand', sans-serif;*/
 			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/gF99Eq10RXOYIxRxce15_rfsg.png">
 		</div>
 		<div class="color-2-bg info-cont">
-			<p class="t-large">Saturday, March 10, 2018 <br>9am -5pm</p>
+			<p class="t-large">Saturday, March 10, 2018 <br>9am - 5pm</p>
 			<hr style="width: 100px; margin:0 auto; border-top: 2px solid #fff;">
 			<p class="t-large">Embassy Suites <br> 28508 Westinghouse Pl <br> Valencia, CA  91355</p>
 		</div>
@@ -520,10 +536,10 @@ font-family: 'Quicksand', sans-serif;*/
 	<div class="theme-width" style="background-color: #4E595C;">
 		<div style="padding: 20px 0;">
 			<ul style="padding: 0;margin: 0; text-align: center;">
-				<!-- <li id="dayz" class="third-font count-num-text"></li> -->
 				<li class="third-font count-num-text dayz"></li>
 				<li class="third-font count-num-text hourz"></li>
 				<li class="third-font count-num-text minutez"></li>
+				<li class="third-font count-num-text secondz"></li>
 				<li class="third-font count-num-text expired"></li>
 			</ul>
 		</div>
@@ -606,9 +622,17 @@ font-family: 'Quicksand', sans-serif;*/
             	document.getElementsByClassName('minutez')[1].innerHTML = "0" + minutes + " <p class='count-text'>MINUTES</p>";
             }
             else {
-            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
-            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + " <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[0].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
+            	document.getElementsByClassName('minutez')[1].innerHTML = minutes + ": <p class='count-text'>MINUTES</p>";
             }
+            if(seconds < 10) {
+            	document.getElementsByClassName('secondz')[0].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = "0" + seconds + " <p class='count-text'>SECONDS</p>";
+            }
+            else {
+            	document.getElementsByClassName('secondz')[0].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            	document.getElementsByClassName('secondz')[1].innerHTML = seconds+ " <p class='count-text'>SECONDS</p>";
+            }            
         }
 
         timer = setInterval(showRemaining, 1000);
