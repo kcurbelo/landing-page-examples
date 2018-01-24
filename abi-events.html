@@ -31,7 +31,6 @@ font-family: 'Quicksand', sans-serif;*/
 	}
 	p, li {
 		font-size: 18px;
-/*		margin-bottom: 30px;*/
 		font-family: 'Lato', sans-serif;
 		font-weight: 400;
 	}
@@ -233,6 +232,19 @@ font-family: 'Quicksand', sans-serif;*/
 	.desk-img {
 		display: inline-block;
 	}
+	.cf:before,
+	.cf:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	.cf:after {
+	    clear: both;
+	}
+
+	.cf {
+	    *zoom: 1;
+	}
 	@media only screen and (max-width: 960px) {
 		.theme-width {
 			width: 90%;
@@ -327,33 +339,7 @@ font-family: 'Quicksand', sans-serif;*/
 		display: none;
 	}		
 	}	
-
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}	
+		
 </style>
 
 	<div style="background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/6QUU5bRgQTCM5AeN9HR6_abi-bg-1.jpg'); background-size: cover;">
@@ -581,9 +567,6 @@ font-family: 'Quicksand', sans-serif;*/
 		</div>
 	</div>
 
-
-
-
 	<div class="theme-width pad-small" style="padding-bottom: 0;background-color: #4B6675;margin-top: 50px;">
 		<div id="the-info-img-cont">
 			<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/nHZH3EaZTTeBdoT1OhvH_details-photo.png">
@@ -620,7 +603,6 @@ font-family: 'Quicksand', sans-serif;*/
 	<div id="btm-banner-cont" style="padding:50px 0;">
 		<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396131/settings_images/5jM5kOgQ6SRvrtgWW3Dg_bd8ee8870b38e1cff9f0f17f9e66a1cb.png" style="width: 200px; margin: 0 auto;">
 	</div>
-
 
 </body>
 
