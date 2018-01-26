@@ -314,11 +314,16 @@ select::-ms-expand {
 	.mem-list-text {
 		text-align: center;
 	}
-
 	.event-width {
 		width: 90%;
 		margin: 0 auto;
+	}
+	#main-footer {
+		display: none !important;
 	}	
+	#footer-bottom {
+		display: none !important;
+	}
 	/* ============================ */
 	/* Contact Page */
 	/* ============================ */
