@@ -2,21 +2,24 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Lato:300,400,600,700|Oswald:300|Quicksand:300,400,500" rel="stylesheet">	
 </head>
 <style>
 label {
-  font-family: 'Roboto', sans-serif; 
-  color: #555;
-  margin-bottom: 10px; 
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
   font-size: 18px;  
 }
 
 .text-label {
   display: block;
   margin: 10px 0;
+  font-weight: 600;
 }
 
-.text-a-label {
+.text-a-label  {
   margin-top: 20px;
 }
 input[type=text] {
@@ -44,8 +47,8 @@ input[type=text] {
 
 input[type=text]:focus {
   border:1px solid #fff;
-    -webkit-box-shadow: 0 0 4px #f09182;
-    box-shadow: 0 0 4px #f09182;
+    -webkit-box-shadow: 0 0 4px #9A4045;
+    box-shadow: 0 0 4px #9A4045;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -69,7 +72,7 @@ textarea {
   margin: 0 0 .5rem; 
   box-shadow: none; 
   height: auto; 
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Lato', sans-serif; 
   -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -77,8 +80,8 @@ textarea {
 }
 textarea:focus {
   border:1px solid #fff;
-    -webkit-box-shadow: 0 0 4px #f09182;
-    box-shadow: 0 0 4px #f09182;
+    -webkit-box-shadow: 0 0 4px #9A4045;
+    box-shadow: 0 0 4px #9A4045;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -86,14 +89,8 @@ textarea:focus {
 }  	
 </style>
 <body>
-
-<h1>Questions</h1>
-<input type="text" name="Date">
-<input type="text" name="Name">
-<input type="text" name="Email">
-<input type="text" name="Phone">
-
-
+<div style="width: 50%;margin: 0 auto;padding: 50px 0;">
+<h1 style="text-align: center;font-family: 'Lato', sans-serif;"><span style="color: #9A4045;">- </span>Application<span style="color: #9A4045;"> -</span></h1>
 <form method="POST" action="https://susanarinderleconsulting40006.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark" novalidate>
   <input type="hidden" name="u" value="1" />
   <input type="hidden" name="f" value="1" />
@@ -105,18 +102,14 @@ textarea:focus {
   <div class="_form-content">
     <div class="_form_element _x82998534 _full_width _clear" >
       <div class="_form-title">
-        Subscribe for Email Updates
       </div>
     </div>
     <div class="_form_element _x53806017 _full_width _clear" >
       <div class="_html-code">
-        <p>
-          Add a descriptive message telling what your visitor is signing up for here.
-        </p>
       </div>
     </div>
     <div class="_form_element _field1 _full_width " >
-      <label class="_form-label">
+      <label class="_form-label text-label">
         Date
       </label>
       <div class="_field-wrapper">
@@ -124,7 +117,7 @@ textarea:focus {
       </div>
     </div>
     <div class="_form_element _x35230709 _full_width " >
-      <label class="_form-label">
+      <label class="_form-label text-label">
         First Name
       </label>
       <div class="_field-wrapper">
@@ -132,7 +125,7 @@ textarea:focus {
       </div>
     </div>
     <div class="_form_element _x29147928 _full_width " >
-      <label class="_form-label">
+      <label class="_form-label text-label">
         Email*
       </label>
       <div class="_field-wrapper">
@@ -140,7 +133,7 @@ textarea:focus {
       </div>
     </div>
     <div class="_form_element _x52241257 _full_width " >
-      <label class="_form-label">
+      <label class="_form-label text-label">
         Phone
       </label>
       <div class="_field-wrapper">
@@ -148,7 +141,7 @@ textarea:focus {
       </div>
     </div>
     <div class="_form_element _field3 _full_width " >
-      <label class="_form-label">
+      <label class="_form-label text-label">
         Mentoring program
       </label>
       <div class="_row _checkbox-radio">
@@ -167,7 +160,7 @@ textarea:focus {
           </div>
         </div>
         <div class="_form_element _field5 _full_width " >
-          <label class="_form-label">
+          <label class="_form-label text-label">
             Currently have a coach
           </label>
           <div class="_row _checkbox-radio">
@@ -186,7 +179,7 @@ textarea:focus {
               </div>
             </div>
             <div class="_form_element _field6 _full_width " >
-              <label class="_form-label">
+              <label class="_form-label text-label">
                 What describes you best
               </label>
               <div class="_row _checkbox-radio">
@@ -219,7 +212,7 @@ textarea:focus {
                       </div>
                     </div>
                     <div class="_form_element _field7 _full_width " >
-                      <label class="_form-label">
+                      <label class="_form-label text-label">
                         What do you prefer most
                       </label>
                       <div class="_row _checkbox-radio">
@@ -238,7 +231,7 @@ textarea:focus {
                           </div>
                         </div>
                         <div class="_form_element _field8 _full_width " >
-                          <label class="_form-label">
+                          <label class="_form-label text-label">
                             Best to reach you
                           </label>
                           <div class="_row _checkbox-radio">
@@ -264,7 +257,7 @@ textarea:focus {
                                 </div>
                               </div>
                               <div class="_form_element _field9 _full_width " >
-                                <label class="_form-label">
+                                <label class="_form-label text-label">
                                   Who referred you
                                 </label>
                                 <div class="_field-wrapper">
@@ -272,8 +265,8 @@ textarea:focus {
                                 </div>
                               </div>
                               <div class="_button-wrapper _full_width">
-                                <button id="_form_1_submit" class="_submit" type="submit">
-                                  Submit
+                                <button id="_form_1_submit" class="_submit" type="submit" style="background:none;border:0;background-color: #9A4045; color: #fff; padding: 15px 30px; display: inline-block;border-radius: 7px;font-size: 16px;font-family: 'Lato', sans-serif; cursor: pointer;margin-top: 15px;">
+                                  SEND APPLICATION
                                 </button>
                               </div>
                               <div class="_clear-element">
@@ -283,11 +276,15 @@ textarea:focus {
                             </div>
                             <div class="_form-branding">
                               <div class="_marketing-by">
-                                Marketing by
                               </div>
                               <a href="http://www.activecampaign.com" class="_logo"></a>
                             </div>
-                          </form><script type="text/javascript">
+                          </form>
+
+</div>
+
+
+                          <script type="text/javascript">
 window.cfields = {"1":"date","3":"mentoring_program","5":"currently_have_a_coach","6":"what_describes_you_best","7":"what_do_you_prefer_most","8":"best_to_reach_you","9":"who_referred_you"};
 window._show_thank_you = function(id, message, trackcmp_url) {
   var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
