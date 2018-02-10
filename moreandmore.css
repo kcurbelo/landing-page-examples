@@ -277,7 +277,17 @@ select::-ms-expand {
 		font-size:1.75rem;
 		font-weight: 300;
 		line-height: 2.25rem;
-	}	
+	}
+	#c-f-name-cont,
+	#c-l-name-cont,
+	#c-email-cont,
+	#c-phone-cont,
+	#c-message-cont,
+	#c-select-cont {
+		display: block;
+		width: 98%;
+		margin-right: 0%;
+	}		
 	.three-col-border {
 		border-left:0px solid #fff;
 		border-right:0px solid #fff;
@@ -494,4 +504,68 @@ select::-ms-expand {
     -webkit-box-shadow: 0 0 0 4px white, inset 0 0 0 2px rgba(0, 0, 0, 0.05), 0 0 0 8px #E2E2E2;
     box-shadow: 0 0 0 4px white, inset 0 0 0 2px rgba(0, 0, 0, 0.05), 0 0 0 8px #E2E2E2;
     display: none;
+}
+#footer-bottom {
+    display: none;
+    padding: 15px 0 5px;
+    background-color: #1f1f1f;
+    background-color: rgba(0,0,0,.32);
+}
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+  text-align: center;
+  padding: 15px 0;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF SIX  */
+.span_6_of_6 {
+  width: 100%;
+}
+
+.span_5_of_6 {
+    width: 83.06%;
+}
+
+.span_4_of_6 {
+    width: 66.13%;
+}
+
+.span_3_of_6 {
+    width: 49.2%;
+}
+
+.span_2_of_6 {
+    width: 32.26%;
+}
+
+.span_1_of_6 {
+    width: 15.33%;
+}
+  .col-in-gro {
+    width: 60%;
+    margin: 0 auto;
+  }
+/*  GO FULL WIDTH BELOW 980 PIXELS */
+@media only screen and (max-width: 980px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+    .col-in-gro {
+    width: 100%;
+  }
 }

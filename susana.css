@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+h1, h2, h3, h4, h5, p, li {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+font-size:2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size:1.75rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+p {
+	font-size: 1rem;
+}
+#footer-bottom {
+	display: none;
+}
+#logo {
+    display: inline-block;
+    float: none;
+    max-height: 34%;
+    margin-bottom: 0;
+    vertical-align: middle;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: inherit;
+}
+/* ============================ */
+/* Contact Page */
+/* ============================ */
+#contact-first-name, 
+#contact-last-name,
+#contact-email,
+#contact-phone,
+#contact-message {
+	border: 1px solid #B7C0CC; 
+	border-radius: 5px; 
+	padding: 20px 10px; 
+	font-size: 1rem; 
+	font-weight: 300; 
+	margin-bottom: 10px; 
+	width: 100%;
+}
+#c-f-name-cont,
+#c-l-name-cont,
+#c-email-cont,
+#c-phone-cont,
+#c-message-cont,
+#c-select-cont {
+	display: inline-block;
+	width: 47%;
+	margin-right: 2%;
+}
+#c-select-cont {
+	vertical-align: top;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #FFFFFF;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 3em;
+  line-height: 3;
+  background: #FFFFFF;
+  overflow: hidden;
+  border-radius: .25em;
+  border: 1px solid #c6c6c6;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #8d8d8d;
+  cursor: pointer;
+  font-size: 1rem;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #f2f2f2;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #aaa;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+#contact-submit {
+    background: none;
+    border: 0;
+    padding: 20px 40px;
+    padding-left: 60px;
+    background-color: #983E46;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-image: url(http://www.howtostartawebinar.com/wp-content/uploads/2018/02/mail.png);
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
+    background-size: 20px;
+}
+#contact-te {
+	color:#983E46;
+}
+.contact-pad {
+	padding: 0;
+}
+.contact-cont {
+	width: 70%;
+	margin: 0 auto;
+}
+	.sq-cont {
+	    height: 250px; 
+	    line-height: 250px; 
+	    text-align: center;
+	}
+	.sq-cont-2 {
+	    height: 200px; 
+	    line-height: 200px; 
+	    text-align: center;
+	}	
+	.cont-span {
+	    display: inline-block; 
+	    vertical-align: middle; 
+	    line-height: normal;
+	}
+	.cont-span-width {
+/*	    width: 60%;
+	    margin: 0 auto;*/
+	}	
+
+@media only screen and (max-width: 980px) {
+	h1 {
+		font-size:1.75rem;
+		font-weight: 300;
+		line-height: 2.25rem;
+	}
+	#c-f-name-cont,
+	#c-l-name-cont,
+	#c-email-cont,
+	#c-phone-cont,
+	#c-message-cont,
+	#c-select-cont {
+		display: block;
+		width: 98%;
+		margin-right: 0%;
+	}		
+
+	/* ============================ */
+	/* Contact Page */
+	/* ============================ */
+	#contact-first-name, 
+	#contact-last-name,
+	#contact-email,
+	#contact-phone,
+	#contact-message {
+		border: 1px solid #B7C0CC; 
+		border-radius: 5px; 
+		padding: 20px 10px; 
+		font-size: 1rem; 
+		font-weight: 300; 
+		margin-bottom: 10px; 
+		width: 100%;
+	}
+	/* Reset Select */
+	select {
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  -ms-appearance: none;
+	  appearance: none;
+	  outline: 0;
+	  box-shadow: none;
+	  border: 0 !important;
+	  background: #FFFFFF;
+	  background-image: none;
+	}
+	/* Custom Select */
+	.select {
+	  position: relative;
+	  display: block;
+	  width: 100%;
+	  height: 3em;
+	  line-height: 3;
+	  background: #FFFFFF;
+	  overflow: hidden;
+	  border-radius: .25em;
+	  border: 1px solid #c6c6c6;
+	}
+	select {
+	  width: 100%;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0 0 0 .5em;
+	  color: #8d8d8d;
+	  cursor: pointer;
+	}
+	select::-ms-expand {
+	  display: none;
+	}
+	/* Arrow */
+	.select::after {
+	  content: "\25BC";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  padding: 0 1em;
+	  background: #f2f2f2;
+	  pointer-events: none;
+	}
+	/* Transition */
+	.select:hover::after {
+	  color: #aaa;
+	}
+	.select::after {
+	  -webkit-transition: .25s all ease;
+	  -o-transition: .25s all ease;
+	  transition: .25s all ease;
+	}
+	#contact-submit {
+	    background: none;
+	    border: 0;
+	    padding: 20px 40px;
+	    padding-left: 60px;
+	    background-color: #983E46;
+	    color: #fff;
+	    text-align: center;
+	    font-size: 1rem;
+	    border-radius: 100px;
+	    margin-top: 10px;
+	    cursor: pointer;
+	    background-image: url(http://www.howtostartawebinar.com/wp-content/uploads/2018/02/mail.png);
+	    background-repeat: no-repeat;
+	    background-position: 19% 50%;
+	    background-size: 20px;
+	}
+	.contact-pad {
+		padding: 0;
+	}	
+	.contact-cont {
+		width: 98%;
+		margin: 0 auto;
+	}
+	.main-about-r {
+		margin-top: 10px;
+	}
+}
