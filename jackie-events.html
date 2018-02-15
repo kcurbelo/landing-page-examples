@@ -10,6 +10,11 @@
 	/* ================ */
 	/* Tag styles */
 	/* ================ */
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 	body{
 		margin:0;
 	}
@@ -311,6 +316,12 @@
 		font-size: 3em;
 	}
 
+	.speakers-cont {
+		display: inline-block;
+		width: 22%; 
+		margin-right: 2%;
+		vertical-align: top;
+	}
 	/* ============================= */
 	/* Banners */
 	/* ============================= */	
@@ -427,7 +438,15 @@
 			background-image: url('https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/mJCrq0SRTJn9d57apJNa_djf-3.jpg');
 			background-size: cover;
 		}		
-
+		.speakers-cont {
+			display: block;
+			width: 100%; 
+			margin-right: 0%;
+			vertical-align: top;
+		}
+		.last-sp {
+			display: none;
+		}
 	}	
 </style>
 
@@ -512,16 +531,81 @@
 		</div>
 	</div>
 
-	<div class="theme-width pad-large">
-		<h1 class="primary-font">What You Can Expect To Learn:</h1>
-		<ul>
-			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Get Unstuck:</strong> How to identify those areas of your life that need to be shaken up.</li>
-			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Pivot:</strong> How to create new opportunities while keeping your day job (for now).</li>
-			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>What’s Next?</strong> How to make the leap from what you’re doing to where you want to be.</li>
-			<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>How to Thrive:</strong> Find clarity, purpose and partnerships to crush any goal you set.</li>
-		</ul>
-		<h1 class="primary-font">Plus… much more!</h1>
+
+	<!-- Speakers -->
+	<div class="pad-large">
+		<h1 style="text-align: center;margin-bottom: 50px;">Speakers</h1>
+		<div style="width: 90%; margin: 0 auto; text-align: center;">
+			<!-- Speaker 1 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/a3XKXIMaSqKS8QqG02BT_tr-1.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Dr. Suzanne Gilberg-Lenz</h2>
+				<p>is a board certified OB/Gyn who specializes in Integrative and Holistic medicine. Dr Suzanne has reached millions through TV, print and popular online platforms, sharing her candid, empowering approach to women’s integrative health, wellness and the science of self care.</p>
+			</div>
+
+			<!-- Speaker 2 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/w3baQ2sZS0yOxwHCWuCj_tr-6.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Christine Sarno</h2>
+				<p>is a career mentor, helping others identify what’s truly preventing them from finding success, and teaching them how to face the fear with self-empowerment.</p>
+			</div>
+
+			<!-- Speaker 3 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/JKcl1AjaTmspRBgkziho_tr-5.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Courtney Townley</h2>
+				<p>helps women to mend their relationship with their body so they can achieve true deep health and deliver their best to the things that matter most to them.</p>
+			</div>
+
+			<!-- Speaker 4 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/mP3UWpV8SPyO0MSww4Ra_tr-2.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Tania Mulry</h2>
+				<p>is a technology entrepreneur, award-winning marketer, speaker, author, and USC professor.</p>
+			</div>	
+			<!-- Speaker 5 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/LQpUBrlTLSCk3elHErrw_tr-4.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Diann Wingert LCSW</h2>
+				<p>is a certified coach who specializes in helping entrepreneurs with ADHD overcome the roadblocks to confidence and success in both business and life.</p>
+			</div>
+
+			<!-- Speaker 6 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/O7epIMUQU2iaq5hhlTBl_tr-3.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>Mary Aggarwal</h2>
+				<p>is a wealth advisor, mother of four and founder of Parentcirkle, which provides a network of peer support to create mentally healthy parents who can return to work sooner and contribute to a prosperous economy.</p>
+			</div>
+
+			<!-- Speaker 7 -->
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/EV56tY29QpeNfUt7aT6G_tr-7.jpg" style="border-radius: 50%; max-width: 200px; margin: 0 auto;">
+				<h2>EMCEE Bridget McManus</h2>
+				<p>is a television host, screenwriter, producer, director and award-winning performer. She created and hosted two television shows for the Logo Network: the award-winning comedy talk show, Brunch with Bridget, and Bridget McManus Presents: That Time of The Month.</p>
+			</div>
+			<div class="speakers-cont">
+				<img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/396224/settings_images/EV56tY29QpeNfUt7aT6G_tr-7.jpg" class="last-sp" style="border-radius: 50%; max-width: 200px; margin: 0 auto; visibility: hidden;">
+				<a href="https://jackie-macdougall.mykajabi.com/offers/cym7AWbQ" class="btn" style="background-color: #4E595C;color: #fff;">REGISTER NOW</a>
+			</div>													
+		</div>
 	</div>
+
+	<div style="background-color: #f2f2f2;">
+		<div class="theme-width pad-large">
+			<h1 class="primary-font">What You Can Expect To Learn:</h1>
+			<ul>
+				<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Get Unstuck:</strong> How to identify those areas of your life that need to be shaken up.</li>
+				<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>Pivot:</strong> How to create new opportunities while keeping your day job (for now).</li>
+				<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>What’s Next?</strong> How to make the leap from what you’re doing to where you want to be.</li>
+				<li class="secondary-font color-4"><span class="color-3">&#10003; </span><strong>How to Thrive:</strong> Find clarity, purpose and partnerships to crush any goal you set.</li>
+			</ul>
+			<h1 class="primary-font">Plus… much more!</h1>
+		</div>
+	</div>
+
+
+
+
 
 	<div class="banner-2">
 		<div class="theme-width-alt pad-large">	
