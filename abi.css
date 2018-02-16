@@ -1,0 +1,177 @@
+    .strong-view.no-quotes .testimonial-image {
+        margin-top: .25em;
+        margin-right: 1em;
+        margin-bottom: 0.25em;
+        float: left;
+    }
+
+
+    .strong-view.simple.nav-position-inside .testimonial-inner {
+        padding-bottom: 0px;
+    	padding:0;
+    }
+
+    .strong-view.simple .testimonial-image {
+        float: left;
+        margin-top: 0em;
+        margin-right: 6em;
+        margin-bottom: 0em;
+    } 
+    .testimon-text {
+        padding-top:90px !important;
+        width: 50%;
+    	margin: 0 50% 0 40%;
+    	text-align: center;
+        
+    }  
+	.strong-view.simple .testimonial-inner {
+	    padding: 0;
+	    margin-bottom: -7px;
+	}
+
+.sq-cont {
+    height: 600px; 
+    line-height: 600px; 
+    text-align: center;
+}
+.cont-span {
+    display: inline-block; 
+    vertical-align: middle; 
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+.bottom-link {
+	color: #ED9084;
+	display: block;
+	text-align: center;
+}
+
+#footer-bottom {
+    display: none;
+}
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.68%;
+}
+.span_3_of_5 {
+	width: 59.36%;
+}
+.span_2_of_5 {
+	width: 39.04%;
+}
+.span_1_of_5 {
+	width: 18.72%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 980px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+
+    .strong-view.no-quotes .testimonial-image {
+        margin-top: .25em;
+        margin-right: 1em;
+        margin-bottom: 0.25em;
+        float: left;
+    }
+
+
+    .strong-view.simple.nav-position-inside .testimonial-inner {
+        padding-bottom: 0px;
+    	padding:0;
+    }
+
+    .strong-view.simple .testimonial-image {
+        float: none;
+        text-align: center;
+        display: block;
+        margin-top: 0em;
+        margin-right: 0em;
+        margin-bottom: 0em;
+        width: 90%;
+        margin: 0 auto;
+    } 	
+	.strong-view.simple .testimonial-inner {
+	    padding: 0;
+	}
+    .testimon-text {
+        padding-top:0px !important;
+        width: 100%;
+    	margin: 0 auto;
+    	text-align: center;
+        
+    }  
+	.custom_row {
+	  display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	flex-wrap: wrap;
+	}
+	 
+	/*** custom classes that will designate the order of columns in the flex box row ***/
+	.first-on-mobile {
+	-webkit-order: 1;
+	order: 1;
+	}
+	 
+	.second-on-mobile {
+	-webkit-order: 2;
+	order: 2;
+	}
+	 
+	.third-on-mobile {
+	-webkit-order: 3;
+	order: 3;
+	}
+	 
+	.fourth-on-mobile {
+	-webkit-order: 4;
+	order: 4;
+	}
+	/*** add margin to last column ***/
+	.custom_row:last-child .et_pb_column:last-child {
+	margin-bottom: 0px;
+	}
+	.mob-fix {
+		margin-bottom: -20px;
+	}
+
+
+}
