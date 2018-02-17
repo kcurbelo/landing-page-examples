@@ -97,6 +97,17 @@
 	width: 18.72%;
 }
 
+
+#mob-btn-1,
+#mob-btn-2,
+#mob-btn-3 {
+	display: none;
+}
+
+#desk-btn {
+	display: block;
+}
+
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 980px) {
 	.col {  margin: 1% 0 1% 0%; }
@@ -172,6 +183,13 @@
 	.mob-fix {
 		margin-bottom: -20px;
 	}
-
+	#mob-btn-1,
+	#mob-btn-2,
+	#mob-btn-3 {
+		display: block;
+	}
+	#desk-btn {
+		display: none;
+	}
 
 }
