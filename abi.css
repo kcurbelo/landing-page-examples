@@ -1,34 +1,42 @@
-    .strong-view.no-quotes .testimonial-image {
-        margin-top: .25em;
-        margin-right: 1em;
-        margin-bottom: 0.25em;
-        float: left;
-    }
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
 
 
-    .strong-view.simple.nav-position-inside .testimonial-inner {
-        padding-bottom: 0px;
-    	padding:0;
-    }
+/* Testimonial styles */
+.strong-view.no-quotes .testimonial-image {
+    margin-top: .25em;
+    margin-right: 1em;
+    margin-bottom: 0.25em;
+    float: left;
+}
+.strong-view.simple.nav-position-inside .testimonial-inner {
+    padding-bottom: 0px;
+	padding:0;
+}
 
-    .strong-view.simple .testimonial-image {
-        float: left;
-        margin-top: 0em;
-        margin-right: 6em;
-        margin-bottom: 0em;
-    } 
-    .testimon-text {
-        padding-top:90px !important;
-        width: 50%;
-    	margin: 0 50% 0 40%;
-    	text-align: center;
-        
-    }  
-	.strong-view.simple .testimonial-inner {
-	    padding: 0;
-	    margin-bottom: -7px;
-	}
+.strong-view.simple .testimonial-image {
+    float: left;
+    margin-top: 0em;
+    margin-right: 6em;
+    margin-bottom: 0em;
+} 
+.testimon-text {
+    padding-top:90px !important;
+    width: 50%;
+	margin: 0 50% 0 40%;
+	text-align: center;
+    
+}  
+.strong-view.simple .testimonial-inner {
+    padding: 0;
+    margin-bottom: -7px;
+}
 
+/* Vertically algined */
 .sq-cont {
     height: 600px; 
     line-height: 600px; 
@@ -40,14 +48,6 @@
     line-height: normal;
 }
 
-
-
-
-
-
-
-
-
 .bottom-link {
 	color: #ED9084;
 	display: block;
@@ -57,8 +57,6 @@
 #footer-bottom {
     display: none;
 }
-
-
 
 /*  SECTIONS  */
 .section {
@@ -113,19 +111,17 @@
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
 
+	/* Testimonial styles */
     .strong-view.no-quotes .testimonial-image {
         margin-top: .25em;
         margin-right: 1em;
         margin-bottom: 0.25em;
         float: left;
     }
-
-
     .strong-view.simple.nav-position-inside .testimonial-inner {
         padding-bottom: 0px;
     	padding:0;
     }
-
     .strong-view.simple .testimonial-image {
         float: none;
         text-align: center;
