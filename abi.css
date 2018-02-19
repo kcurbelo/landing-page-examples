@@ -1,10 +1,26 @@
 h1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 h2 {
-	font-size: 2rem;
+	font-size: 3rem;
+}
+p {
+	font-size: 1rem;
 }
 
+/* Nav logo style */
+#logo {
+    display: inline-block;
+    float: none;
+    max-height: 50%;
+    margin-bottom: 0;
+    vertical-align: middle;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: inherit;
+}
 
 /* Testimonial styles */
 .strong-view.no-quotes .testimonial-image {
@@ -38,8 +54,8 @@ h2 {
 
 /* Vertically algined */
 .sq-cont {
-    height: 600px; 
-    line-height: 600px; 
+    height: 700px; 
+    line-height: 700px; 
     text-align: center;
 }
 .cont-span {
